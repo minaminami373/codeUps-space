@@ -1,0 +1,19 @@
+@use 'foundation' as *;
+
+.mv {
+  height: (730 / 1440) * 100vw;
+  background-image: url(/images/common/mv.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  padding-left: (200 / 1440) * 100vw;
+}
+
+
+.mv__title {
+  width: (640 / 1440) * 100vw;
+
+
+}
