@@ -100,7 +100,7 @@ select {
  * Sassではmath.div関数の使用が推奨のため、スラッシュ(/)演算子から変更
 ******************************************/
 html {
-  font-size: 16px;
+  font-size: 16;
 }
 @media (max-width: 1280px) {
   html {
@@ -109,7 +109,7 @@ html {
 }
 @media screen and (max-width: 767px) {
   html {
-    font-size: 16px;
+    font-size: 16;
   }
 }
 @media (max-width: 375px) {
@@ -138,6 +138,14 @@ a:hover {
   a:hover {
     opacity: 1;
   }
+}
+
+.l-inner {
+  width: 100%;
+  padding-left: 25px;
+  padding-right: 25px;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .c-btn {
@@ -206,6 +214,82 @@ a:hover {
   .sp-none {
     display: block;
   }
+}
+
+.about__contents {
+  margin-top: 60px;
+}
+
+.about-block {
+  position: relative;
+  width: 700px;
+  max-width: 100%;
+}
+
+.about-block:not(:first-child) {
+  margin-top: 105px;
+}
+
+.about-block:nth-child(odd) {
+  margin-left: auto;
+}
+
+.about-block__img {
+  position: absolute;
+}
+
+.about-block__img--1 {
+  width: 22.1875rem;
+  left: -30.625rem;
+}
+@media screen and (max-width: 1400px) {
+  .about-block__img--1 {
+    left: -22.5rem;
+  }
+}
+
+.about-block__img--2 {
+  width: 25rem;
+  right: -30.625rem;
+}
+@media screen and (max-width: 1400px) {
+  .about-block__img--2 {
+    right: -22.5rem;
+  }
+}
+
+.about-block__img--3 {
+  width: 23.75rem;
+  left: -30.625rem;
+  top: -1.875rem;
+}
+@media screen and (max-width: 1400px) {
+  .about-block__img--3 {
+    left: -22.5rem;
+  }
+}
+
+.about-block__img--4 {
+  width: 28.125rem;
+  right: -30.625rem;
+}
+@media screen and (max-width: 1400px) {
+  .about-block__img--4 {
+    right: -22.5rem;
+  }
+}
+
+.about-block__title {
+  font-size: 30px;
+}
+
+.about-block__text {
+  font-size: 18px;
+  margin-top: 24px;
+}
+
+.about__inner {
+  max-width: 1090px;
 }
 
 .about__title {
@@ -278,6 +362,106 @@ a:hover {
   transform: rotate(15deg);
 }
 
+.about__noza-img {
+  max-width: 61.25rem;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 6.25rem;
+}
+
+.content__inner {
+  padding: 0 2.5rem 0;
+  max-width: 90rem;
+  width: 100%;
+  margin: auto;
+  position: relative;
+}
+
+.content__items {
+  position: relative;
+  padding-top: 67.51773%;
+  background-image: url(/images/common/content_bg.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: top;
+  margin-top: 15.625rem;
+}
+
+.content__title {
+  font-size: 50px;
+  position: absolute;
+  left: calc(50% - 520px);
+  top: -3.125rem;
+}
+
+.content__title span {
+  display: inline-block;
+  position: relative;
+}
+
+.content__title span:first-child {
+  transform: rotate(-20deg);
+  top: 1.875rem;
+}
+
+.content__title span:nth-child(2) {
+  top: 0.9375rem;
+}
+
+.content__title span:nth-child(3) {
+  transform: rotate(2deg);
+}
+
+.content__title span:nth-child(4) {
+  transform: rotate(-10deg);
+  top: -0.625rem;
+}
+
+.content__item {
+  position: absolute;
+}
+
+.content__img {
+  position: relative;
+  width: 25.625rem;
+}
+
+.content__subtitle {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%;
+  text-align: center;
+}
+
+.content__item:first-child {
+  top: -12.5rem;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.content__item:nth-child(3) {
+  top: 25rem;
+  right: 1.875rem;
+}
+
+.content__item:nth-child(2) {
+  top: 18.75rem;
+  left: 1.25rem;
+}
+
+.date__items {
+  display: flex;
+  margin: auto;
+  max-width: 90rem;
+  width: 100%;
+}
+
+.date__item {
+  width: 50%;
+}
+
 .header {
   position: fixed;
   top: 0;
@@ -340,6 +524,10 @@ a:hover {
 
 .section-about {
   margin-top: 30px;
+}
+
+.section-date {
+  margin-top: -5rem;
 }
 
 .section-movie {

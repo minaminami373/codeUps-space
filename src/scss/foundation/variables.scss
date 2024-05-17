@@ -19,6 +19,7 @@ $breakpoints: null;
     "md": "screen and (max-width: 767px)",
     "lg": "screen and (max-width: 999px)",
     "xl": "screen and (max-width: 1199px)",
+    "img": "screen and (max-width: 1400px)",
   );
 }
 
@@ -39,7 +40,10 @@ $bold: 700;
 $extra-bold: 800;
 
 // ベースフォントサイズ
-$base-font-size: 16px;
+$base-font-size: 16;
+@function rem($pixels) {
+  @return calc($pixels / $base-font-size) * 1rem;
+}
 
 // Color
 $black:#021212;

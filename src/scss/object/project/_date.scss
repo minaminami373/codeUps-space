@@ -1,0 +1,13 @@
+@use 'foundation' as *;
+
+.date__items {
+  display: flex;
+  margin: auto;
+  max-width: rem(1440);
+  width: 100%;
+}
+
+.date__item {
+  width: 50%;
+}
+

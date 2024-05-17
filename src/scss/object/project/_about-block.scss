@@ -1,0 +1,63 @@
+@use 'foundation' as *;
+
+.about-block {
+  position: relative;
+  width: 700px;
+  max-width: 100%;
+}
+
+.about-block:not(:first-child) {
+  margin-top: 105px;
+}
+
+.about-block:nth-child(odd) {
+  margin-left: auto;
+}
+
+.about-block__img {
+  position: absolute;
+}
+
+.about-block__img--1 {
+  width: rem(355);
+  left: rem(-490);
+  @include mq(img) {
+    left: rem(-360);
+  }
+}
+
+.about-block__img--2 {
+  width: rem(400);
+  right: rem(-490);
+  @include mq(img) {
+    right: rem(-360);
+  }
+}
+
+.about-block__img--3 {
+  width: rem(380);
+  left: rem(-490);
+  top: rem(-30);
+  @include mq(img) {
+    left: rem(-360);
+  }
+}
+
+.about-block__img--4 {
+  width: rem(450);
+  right: rem(-490);
+  @include mq(img) {
+    right: rem(-360);
+  }
+}
+
+
+
+.about-block__title {
+  font-size: 30px;
+}
+
+.about-block__text {
+  font-size: 18px;
+  margin-top: 24px;
+}

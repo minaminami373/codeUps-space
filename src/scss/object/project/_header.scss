@@ -10,7 +10,7 @@
 }
 
 .header__title {
-  width: (138 / 1440) * 100vw;
+  width: calc(138 / 1440) * 100vw;
   height: inherit;
   display: flex;
   align-items: center;
