@@ -1,0 +1,72 @@
+@use 'foundation' as *;
+
+.recruit__inner {
+  max-width: 1050px;
+  padding: 0 25px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+
+.recruit__items {
+  margin-top: rem(55);
+}
+
+.recruit__item {
+  display: flex;
+}
+
+.recruit__item:first-child {
+
+  .recruit__term {
+    border-top: 2px $blue solid;
+  }
+
+  .recruit__description {
+    border-top: 2px $white solid;
+  }
+}
+
+.recruit__title {
+  font-size: 28px;
+  font-family: $bold;
+  position: relative;
+  display: inline-block;
+}
+
+.recruit__title::after {
+  position: absolute;
+  content: "";
+  width: 29px;
+  height: 2px;
+  background-color: $blue;
+  top: 50%;
+  right: -54px;
+  transform: translateY(-50%);
+}
+
+.recruit__term {
+  font-size: 18px;
+  font-family: $bold;
+  line-height: 2;
+  width: 20%;
+  border-bottom: 2px solid $blue;
+  padding: 24px 0;
+}
+
+.recruit__description {
+  font-size: 18px;
+  line-height: 2;
+  padding-left: 34px;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  width: calc(80% - 10px);
+  margin-left: 10px;
+  border-bottom: 2px solid $white;
+}
+
+
+
+
+
+

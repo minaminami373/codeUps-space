@@ -1,0 +1,33 @@
+@use 'foundation' as *;
+
+.bg-star {
+  margin-top: rem(-50);
+  position: relative;
+  z-index: -999;
+}
+
+.bg-star::before {
+  content: "";
+  position: absolute;
+  background-image: url(/images/common/bg-left.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: calc(630 /1440 * 100vw);
+  height: calc(4972 / 1440 *100vw);
+  left: 0;
+  top: 8px;
+  z-index: -999;
+}
+
+.bg-star::after {
+  content: "";
+  position: absolute;
+  background-image: url(/images/common/bg-right.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: calc(630 /1440 * 100vw);
+  height: calc(4972 / 1440 *100vw);
+  top: 259px;
+  right: 0;
+  z-index: -999;
+}

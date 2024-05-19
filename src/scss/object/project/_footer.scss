@@ -1,0 +1,15 @@
+@use 'foundation' as *;
+
+.footer {
+  text-align: center;
+  font-size: 12px;
+  background-image: url(/images/common/footer.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: calc(128 / 1440 * 100vw);
+}
+
+.footer__copyright {
+  padding-top: calc(68.8 / 1440 * 100vw);
+}

@@ -47,6 +47,7 @@ body {
   font-weight: $regular;
   color: $white;
   background-color: $black;
+  z-index: 9999;
 }
 
 a {
