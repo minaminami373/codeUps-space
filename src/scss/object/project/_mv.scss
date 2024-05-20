@@ -1,19 +1,17 @@
 @use 'foundation' as *;
 
 .mv {
-  height: calc(730 / 1440) * 100vw;
+  height: calc(730 / 1440 * 100vw);
   background-image: url(/images/common/mv.png);
-  background-position: center;
+  background-position: top;
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
   align-items: center;
-  padding-left: calc(200 / 1440) * 100vw;
+  padding-left: calc(193 / 1440 * 100vw);
 }
 
-
 .mv__title {
-  width: calc(640 / 1440) * 100vw;
-
-
+  width: calc(655 / 1440 * 100vw);
+  margin-top: 25px;
 }

@@ -392,6 +392,7 @@ a:hover {
   left: 0;
   top: 8px;
   z-index: -999;
+  max-height: 4972px;
 }
 
 .bg-star::after {
@@ -405,6 +406,7 @@ a:hover {
   top: 259px;
   right: 0;
   z-index: -999;
+  max-height: 4089px;
 }
 
 .content__inner {
@@ -499,6 +501,14 @@ a:hover {
   width: 50%;
 }
 
+.entry-btn {
+  position: fixed;
+  top: 600px;
+  right: 30px;
+  width: 164px;
+  height: 164px;
+}
+
 .footer {
   text-align: center;
   font-size: 12px;
@@ -562,16 +572,17 @@ a:hover {
 .mv {
   height: 50.6944444444vw;
   background-image: url(/images/common/mv.png);
-  background-position: center;
+  background-position: top;
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
   align-items: center;
-  padding-left: 13.8888888889vw;
+  padding-left: 13.4027777778vw;
 }
 
 .mv__title {
-  width: 44.4444444444vw;
+  width: 45.4861111111vw;
+  margin-top: 25px;
 }
 
 .recruit__inner {
